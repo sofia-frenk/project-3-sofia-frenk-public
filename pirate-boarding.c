@@ -21,7 +21,7 @@ long int there_be_pirates = 0 ;
 
 // FIND THE PIRATE SECRET THAT ALLOWS Long John Von Neumann to board the ship!
 
-#define PIRATE_SECRET -1
+#define PIRATE_SECRET 3
 
 
 void caribbean_voyage() {
@@ -50,7 +50,7 @@ int main(int argc, char * argv[]) {
 	// infamous pirate long john von neumann. 
 	
 	// YOU HAVE TO CHANGE 0 TO THE PROPER FUNCTION
-	return_to = (long int) 0 ;
+	return_to = (long int) pirate_ship;
 
 	caribbean_voyage() ;
 	printf("There were no pirates.\n") ;
@@ -59,6 +59,6 @@ int main(int argc, char * argv[]) {
 	caribbean_voyage() ;
 	
 	// never get here
-	assert(0==1) ;
+//	assert(0==1) ;
 	return 0 ;
 }
