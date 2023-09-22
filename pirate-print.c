@@ -18,7 +18,7 @@ int there_be_pirates = 0 ;
 
 // FIND THE PIRATE SECRET THAT ALLOWS Long John Von Neumann to print There Be Pirates!!
 
-#define PIRATE_SECRET 0
+#define PIRATE_SECRET 44
 
 void pirate_boarding(void) {
 	int stack_marker ;
@@ -30,7 +30,7 @@ void pirate_boarding(void) {
 void print_it(char * string_pointer_on_stack) {
 
 	// YOU HAVE TO CHANGE 0 TO & OF THE PROPER VARIABLE
-	location = 0 ;
+	location = &string_pointer_on_stack;
 	
 	if (there_be_pirates) {
 		pirate_boarding() ;
