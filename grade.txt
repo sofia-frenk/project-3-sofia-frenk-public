@@ -1,0 +1,29 @@
+https://github.com/csc-coursework/project-3-sofia-frenk.git
+commit c6048f0cfe1d50c864b7806aa8319be99619fd5d
+Author: Ubuntu <ubuntu@ip-172-31-16-47.us-east-2.compute.internal>
+Date:   Fri Sep 22 01:20:52 2023 +0000
+
+    commit pirate-print
+cc -o pirate-boarding pirate-boarding.c
+./pirate-boarding
+
+Are there pirates?
+There were no pirates.
+
+Are there pirates?
+*** You have been boarded by pirate Long John von Neumann! ***
+
+cc -o pirate-print pirate-print.c
+pirate-print.c: In function ‘pirate_boarding’:
+pirate-print.c:26:25: warning: assignment to ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+   26 |     *(ip+PIRATE_SECRET) = "*** There be pirates! ***" ;
+      |                         ^
+./pirate-print
+Are there pirates in these cyberwaters?
+No, there are no pirates.
+
+Are there pirates in these cyberwaters?
+*** There be pirates! ***
+
+Grades : 5/5
+Comments : Great Job!!
